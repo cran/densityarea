@@ -1,7 +1,7 @@
 Type: Package
 Package: densityarea
 Title: Polygons of Bivariate Density Distributions
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Josef", "Fruehwald", , "jofrhwld@gmail.com", role = c("aut", "cre", "cph"))
 Description: With bivariate data, it is possible to calculate
@@ -23,8 +23,8 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-10-01 18:30:29 UTC; joseffruehwald
+Packaged: 2025-07-25 17:30:41 UTC; joseffruehwald
 Author: Josef Fruehwald [aut, cre, cph]
 Maintainer: Josef Fruehwald <jofrhwld@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-10-02 10:20:06 UTC
+Date/Publication: 2025-07-25 17:40:02 UTC

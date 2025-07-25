@@ -15,7 +15,7 @@ library(sf)
 library(ggdensity)
 
 ## ----setup2, eval = F---------------------------------------------------------
-#  library(ggplot2)
+# library(ggplot2)
 
 ## ----include=F----------------------------------------------------------------
 ggplot2_inst <- require(ggplot2)

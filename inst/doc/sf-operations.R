@@ -15,10 +15,10 @@ library(purrr)
 library(sf)
 
 ## ----setup2, eval=FALSE-------------------------------------------------------
-#  # package suggests
-#  library(tidyr)
-#  library(stringr)
-#  library(ggplot2)
+# # package suggests
+# library(tidyr)
+# library(stringr)
+# library(ggplot2)
 
 ## ----include=F----------------------------------------------------------------
 tidyr_inst <- require(tidyr)
@@ -116,9 +116,9 @@ new_label <- function(indices, labels){
 }
 
 ## ----eval=!stringr_inst, echo=!stringr_inst-----------------------------------
-#  new_label <- function(indicies, labels){
-#    paste0(labels[indicies], collapse = "~")
-#  }
+# new_label <- function(indicies, labels){
+#   paste0(labels[indicies], collapse = "~")
+# }
 
 ## -----------------------------------------------------------------------------
 vowel_intersections |> 
@@ -158,7 +158,7 @@ vowel_intersections |>
 library(sfheaders)
 
 ## ----eval=F-------------------------------------------------------------------
-#  library(forcats)
+# library(forcats)
 
 ## -----------------------------------------------------------------------------
 s01 |> 
@@ -248,15 +248,15 @@ vowel_probs |>
   vowel_within
 
 ## ----eval=!tidyr_inst, echo=!tidyr_inst---------------------------------------
-#  vowel_probs |>
-#    st_join(
-#      rand_vowel,
-#      .predicate = st_covers
-#    ) |>
-#    filter(
-#      !is.na(plt_vclass.y)
-#    ) ->
-#    vowel_within
+# vowel_probs |>
+#   st_join(
+#     rand_vowel,
+#     .predicate = st_covers
+#   ) |>
+#   filter(
+#     !is.na(plt_vclass.y)
+#   ) ->
+#   vowel_within
 
 ## ----eval=forcats_inst, echo = forcats_inst-----------------------------------
 vowel_within |> 
@@ -267,13 +267,13 @@ vowel_within |>
   vowel_min_prob
 
 ## ----eval=!forcats_inst, echo = !forcats_inst---------------------------------
-#  vowel_within |>
-#    group_by(plt_vclass.x) |>
-#    filter(prob == min(prob)) |>
-#    ungroup() |>
-#    mutate(plt_vclass = reorder(factor(plt_vclass.x),
-#                                prob)) ->
-#    vowel_min_prob
+# vowel_within |>
+#   group_by(plt_vclass.x) |>
+#   filter(prob == min(prob)) |>
+#   ungroup() |>
+#   mutate(plt_vclass = reorder(factor(plt_vclass.x),
+#                               prob)) ->
+#   vowel_min_prob
 
 ## ----eval = ggplot2_inst, fig.width=5, fig.height = 5, out.width="80%"--------
 vowel_min_prob |> 
